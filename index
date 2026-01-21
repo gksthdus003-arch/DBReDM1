@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta charset="UTF-8">
+<style>
+@media only screen and (max-width:640px) {
+  .stb-left-cell,.stb-right-cell {
+    max-width:100%!important;
+    width:100%!important;
+    box-sizing:border-box;
+  }
+  img.stb-justify {width:100%!important;}
+}
+.stb-left-cell p,.stb-right-cell p {margin:0!important;}
+
+/* ✅ 이미지 사이 공백 제거 핵심 */
+.stb-image-box td {font-size:0 !important; line-height:0 !important;}
+img.stb-justify {display:block !important;}
+</style>
+</head>
+
+<body style="width:100%;margin:0;">
+<div class="stb-container-full" style="width:100%;padding:40px 0;margin:0 auto;">
+<table class="stb-container stb-option-normal" align="center"
+  style="margin:0 auto;width:94%;max-width:700px;background:#ffffff;">
+<tbody><tr>
+<td style="width:100%;max-width:700px;margin:0 auto;overflow:hidden;_width:700px;">
+
+<!-- IMAGE -->
+<img src="https://img2.stibee.com/87638_3195430_1768885022940422279.jpg"
+  class="stb-justify" width="700"
+  style="width:100%;height:auto;border:0;">
+
+<!-- VIDEO THUMB -->
+<a href="https://youtu.be/m92mX2efAAI" target="_blank" rel="noopener noreferrer">
+<img src="https://img2.stibee.com/87638_3198304_1768985272963892162.png"
+  class="stb-justify" width="700"
+  style="width:100%;height:auto;border:0;">
+</a>
+
+<!-- IMAGE -->
+<img src="https://img2.stibee.com/87638_3195430_1768892386853980765.jpg"
+  class="stb-justify" width="700"
+  style="width:100%;height:auto;border:0;">
+
+<div style="height:35px;background:#F9F8F6;"></div>
+
+<!-- CTA -->
+<div style="background:#F9F8F6;text-align:center;padding:25px 15px;">
+<a href="https://moaform.com/q/gvTDKD" target="_blank" rel="noopener noreferrer"
+  style="display:inline-block;background:#f62626;color:#fff;
+  padding:20px 28px;border-radius:999px;font-size:20px;text-decoration:none;">
+<b>신청 전, 교육 상담 요청하기</b>
+</a>
+</div>
+
+<div style="background:#F9F8F6;text-align:center;padding-bottom:25px;">
+<span style="font-size:14px;">※ 교육 신청은 상담 후 결정하셔도 됩니다.</span>
+</div>
+
+<!-- IMAGE SECTIONS -->
+<img src="https://img2.stibee.com/87638_3195430_1768892452601005925.jpg" class="stb-justify" width="700">
+<img src="https://img2.stibee.com/87638_3195430_1768885089718149419.jpg" class="stb-justify" width="700">
+<img src="https://img2.stibee.com/87638_3195430_1768889305198903613.jpg" class="stb-justify" width="700">
+<img src="https://img2.stibee.com/87638_3195430_1768889314167080079.jpg" class="stb-justify" width="700">
+<img src="https://img2.stibee.com/87638_3195430_1768894847038627971.jpg" class="stb-justify" width="700">
+<img src="https://img2.stibee.com/87638_3195430_1768957907628387845.jpg" class="stb-justify" width="700">
+
+<!-- 2 BUTTONS -->
+<div style="background:#F9F8F6;padding:20px;text-align:center;">
+<div style="display:inline-block;width:48%;margin-right:2%;">
+<a href="https://moaform.com/q/gvTDKD" target="_blank" rel="noopener noreferrer"
+  style="display:block;background:#6b5a2e;color:#fff;
+  padding:20px;border-radius:999px;text-decoration:none;">
+<b>상담 요청</b>
+</a>
+</div>
+<div style="display:inline-block;width:48%;">
+<a href="https://moaform.com/q/avya7X" target="_blank" rel="noopener noreferrer"
+  style="display:block;background:#6b5a2e;color:#fff;
+  padding:20px;border-radius:999px;text-decoration:none;">
+<b>교육 신청</b>
+</a>
+</div>
+</div>
+
+<!-- FOOTER (연락처만) -->
+<div style="text-align:center;font-size:12px;color:#747579;padding:15px;">
+031-726-0949<br>
+root@rootconsulting.co.kr<br>
+경기도 성남시 분당구 백현로 100
+</div>
+
+</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>
