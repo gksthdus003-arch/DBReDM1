@@ -1,99 +1,247 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-<meta charset="UTF-8">
-<style>
-@media only screen and (max-width:640px) {
-  .stb-left-cell,.stb-right-cell {
-    max-width:100%!important;
-    width:100%!important;
-    box-sizing:border-box;
-  }
-  img.stb-justify {width:100%!important;}
-}
-.stb-left-cell p,.stb-right-cell p {margin:0!important;}
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <meta charset="UTF-8">
+  <style>
+    @media only screen and (max-width:640px) {
+      .stb-left-cell,.stb-right-cell {max-width:100% !important;width:100% !important;box-sizing:border-box;}
+      img.stb-justify {width:100% !important;height:auto !important;}
+      .stb-block {width:100% !important;}
+      table.stb-cell {width:100% !important;}
+    }
 
-/* ✅ 이미지 사이 공백 제거 핵심 */
-.stb-image-box td {font-size:0 !important; line-height:0 !important;}
-img.stb-justify {display:block !important;}
-</style>
+    /* ✅ 이미지 공백 제거(기본값) */
+    .stb-image-box td {font-size:0 !important; line-height:0 !important;}
+    img.stb-justify {display:block !important; border:0; outline:none; text-decoration:none;}
+  </style>
 </head>
 
-<body style="width:100%;margin:0;">
-<div class="stb-container-full" style="width:100%;padding:40px 0;margin:0 auto;">
-<table class="stb-container stb-option-normal" align="center"
-  style="margin:0 auto;width:94%;max-width:700px;background:#ffffff;">
-<tbody><tr>
-<td style="width:100%;max-width:700px;margin:0 auto;overflow:hidden;_width:700px;">
+<body style="width:100%;margin:0;padding:0;
+  font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',Arial,sans-serif;">
+<div class="stb-container-full" style="width:100%;padding:40px 0;margin:0 auto;display:block;">
+  <table class="stb-container stb-option-normal" cellpadding="0" cellspacing="0" border="0" align="center"
+    style="margin:0 auto;width:94%;max-width:700px;background:#ffffff;border-style:none;box-sizing:border-box;">
+    <tbody>
+      <tr>
+        <!-- ✅ (2) 이미지 공백 방지: 최상단 TD에 line-height:0 + font-size:0 -->
+        <td style="width:100%;max-width:700px;margin:0 auto;position:relative;border:0;clear:both;
+          border-collapse:separate;padding:0;overflow:hidden;_width:700px;background:#ffffff;
+          line-height:0;font-size:0;">
 
-<!-- IMAGE -->
-<img src="https://img2.stibee.com/87638_3195430_1768885022940422279.jpg"
-  class="stb-justify" width="700"
-  style="width:100%;height:auto;border:0;">
+          <!-- 1) 상단 이미지 -->
+          <div class="stb-image-box">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr>
+                <td style="padding:0;margin:0;border:0;line-height:0;font-size:0;">
+                  <img src="https://img2.stibee.com/87638_3195430_1768885022940422279.jpg"
+                    width="700" class="stb-justify"
+                    style="width:100%;max-width:700px;height:auto;display:block;border:0;line-height:0;font-size:0;">
+                </td>
+              </tr></tbody>
+            </table>
+          </div>
 
-<!-- VIDEO THUMB -->
-<a href="https://youtu.be/m92mX2efAAI" target="_blank" rel="noopener noreferrer">
-<img src="https://img2.stibee.com/87638_3198304_1768985272963892162.png"
-  class="stb-justify" width="700"
-  style="width:100%;height:auto;border:0;">
-</a>
+          <!-- 2) 영상 썸네일(클릭 시 새창) -->
+          <div class="stb-image-box" style="background:#F9F8F6;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr>
+                <td style="padding:15px 15px 15px 15px;margin:0;border:0;line-height:0;font-size:0;">
+                  <a href="https://youtu.be/m92mX2efAAI" target="_blank" rel="noopener noreferrer"
+                    style="text-decoration:none;display:block;">
+                    <img src="https://img2.stibee.com/87638_3198304_1768985272963892162.png"
+                      width="700" class="stb-justify"
+                      style="width:100%;max-width:700px;height:auto;display:block;border:0;line-height:0;font-size:0;">
+                  </a>
+                </td>
+              </tr></tbody>
+            </table>
+          </div>
 
-<!-- IMAGE -->
-<img src="https://img2.stibee.com/87638_3195430_1768892386853980765.jpg"
-  class="stb-justify" width="700"
-  style="width:100%;height:auto;border:0;">
+          <!-- 3) 이미지 -->
+          <div class="stb-image-box">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr>
+                <td style="padding:0;margin:0;border:0;line-height:0;font-size:0;">
+                  <img src="https://img2.stibee.com/87638_3195430_1768892386853980765.jpg"
+                    width="700" class="stb-justify"
+                    style="width:100%;max-width:700px;height:auto;display:block;border:0;line-height:0;font-size:0;">
+                </td>
+              </tr></tbody>
+            </table>
+          </div>
 
-<div style="height:35px;background:#F9F8F6;"></div>
+          <!-- 간격(텍스트용 블록이므로 line-height 복구) -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#F9F8F6;">
+            <tbody><tr>
+              <td style="height:35px;line-height:35px;font-size:35px;">&nbsp;</td>
+            </tr></tbody>
+          </table>
 
-<!-- CTA -->
-<div style="background:#F9F8F6;text-align:center;padding:25px 15px;">
-<a href="https://moaform.com/q/gvTDKD" target="_blank" rel="noopener noreferrer"
-  style="display:inline-block;background:#f62626;color:#fff;
-  padding:20px 28px;border-radius:999px;font-size:20px;text-decoration:none;">
-<b>신청 전, 교육 상담 요청하기</b>
-</a>
-</div>
+          <!-- 4) 빨간 CTA 버튼 (크기 고정 스타일 적용) -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#F9F8F6;">
+            <tbody><tr>
+              <td style="padding:25px 15px 5px 15px;text-align:center;
+                line-height:1.2;font-size:14px;
+                font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',Arial,sans-serif;">
+                <a href="https://moaform.com/q/gvTDKD" target="_blank" rel="noopener noreferrer"
+                  style="display:inline-block;
+                    background:#f62626;
+                    color:#fff;
+                    padding:20px 28px;
+                    border-radius:999px;
+                    font-size:20px;
+                    line-height:20px;
+                    font-weight:700;
+                    font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',Arial,sans-serif;
+                    text-decoration:none;
+                    text-align:center;
+                    mso-line-height-rule:exactly;">
+                  신청 전, 교육 상담 요청하기
+                </a>
+              </td>
+            </tr></tbody>
+          </table>
 
-<div style="background:#F9F8F6;text-align:center;padding-bottom:25px;">
-<span style="font-size:14px;">※ 교육 신청은 상담 후 결정하셔도 됩니다.</span>
-</div>
+          <!-- 안내 문구 -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#F9F8F6;">
+            <tbody><tr>
+              <td style="padding:0 15px 25px 15px;text-align:center;
+                font-size:14px;line-height:1.7;color:#000;
+                font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',Arial,sans-serif;">
+                ※ 교육 신청은 상담 후 결정하셔도 됩니다.
+              </td>
+            </tr></tbody>
+          </table>
 
-<!-- IMAGE SECTIONS -->
-<img src="https://img2.stibee.com/87638_3195430_1768892452601005925.jpg" class="stb-justify" width="700">
-<img src="https://img2.stibee.com/87638_3195430_1768885089718149419.jpg" class="stb-justify" width="700">
-<img src="https://img2.stibee.com/87638_3195430_1768889305198903613.jpg" class="stb-justify" width="700">
-<img src="https://img2.stibee.com/87638_3195430_1768889314167080079.jpg" class="stb-justify" width="700">
-<img src="https://img2.stibee.com/87638_3195430_1768894847038627971.jpg" class="stb-justify" width="700">
-<img src="https://img2.stibee.com/87638_3195430_1768957907628387845.jpg" class="stb-justify" width="700">
+          <!-- 5) 이미지들 -->
+          <div class="stb-image-box">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr><td style="padding:0;margin:0;border:0;line-height:0;font-size:0;">
+                <img src="https://img2.stibee.com/87638_3195430_1768892452601005925.jpg" width="700" class="stb-justify"
+                  style="width:100%;max-width:700px;height:auto;display:block;border:0;line-height:0;font-size:0;">
+              </td></tr></tbody>
+            </table>
+          </div>
 
-<!-- 2 BUTTONS -->
-<div style="background:#F9F8F6;padding:20px;text-align:center;">
-<div style="display:inline-block;width:48%;margin-right:2%;">
-<a href="https://moaform.com/q/gvTDKD" target="_blank" rel="noopener noreferrer"
-  style="display:block;background:#6b5a2e;color:#fff;
-  padding:20px;border-radius:999px;text-decoration:none;">
-<b>상담 요청</b>
-</a>
-</div>
-<div style="display:inline-block;width:48%;">
-<a href="https://moaform.com/q/avya7X" target="_blank" rel="noopener noreferrer"
-  style="display:block;background:#6b5a2e;color:#fff;
-  padding:20px;border-radius:999px;text-decoration:none;">
-<b>교육 신청</b>
-</a>
-</div>
-</div>
+          <div class="stb-image-box">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr><td style="padding:0;margin:0;border:0;line-height:0;font-size:0;">
+                <img src="https://img2.stibee.com/87638_3195430_1768885089718149419.jpg" width="700" class="stb-justify"
+                  style="width:100%;max-width:700px;height:auto;display:block;border:0;line-height:0;font-size:0;">
+              </td></tr></tbody>
+            </table>
+          </div>
 
-<!-- FOOTER (연락처만) -->
-<div style="text-align:center;font-size:12px;color:#747579;padding:15px;">
-031-726-0949<br>
-root@rootconsulting.co.kr<br>
-경기도 성남시 분당구 백현로 100
-</div>
+          <div class="stb-image-box">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr><td style="padding:0;margin:0;border:0;line-height:0;font-size:0;">
+                <img src="https://img2.stibee.com/87638_3195430_1768889305198903613.jpg" width="700" class="stb-justify"
+                  style="width:100%;max-width:700px;height:auto;display:block;border:0;line-height:0;font-size:0;">
+              </td></tr></tbody>
+            </table>
+          </div>
 
-</td></tr></tbody>
-</table>
+          <div class="stb-image-box">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr><td style="padding:0;margin:0;border:0;line-height:0;font-size:0;">
+                <img src="https://img2.stibee.com/87638_3195430_1768889314167080079.jpg" width="700" class="stb-justify"
+                  style="width:100%;max-width:700px;height:auto;display:block;border:0;line-height:0;font-size:0;">
+              </td></tr></tbody>
+            </table>
+          </div>
+
+          <!-- ✅ (1) 누락된 “브로슈어 다운로드” 버튼 블록 추가 -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#F9F8F6;">
+            <tbody><tr>
+              <td style="padding:20px 15px 20px 15px;text-align:center;
+                line-height:1.2;font-size:14px;
+                font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',Arial,sans-serif;">
+                <a href="https://drive.google.com/file/d/1LncmOp98gIu20dHW-ECrLwiepAE-j0lq/view?usp=sharing"
+                  target="_blank" rel="noopener noreferrer"
+                  style="display:inline-block;
+                    background:#6b5a2e;
+                    color:#fff;
+                    padding:20px 30px;
+                    border-radius:999px;
+                    font-size:18px;
+                    line-height:18px;
+                    font-weight:700;
+                    font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',Arial,sans-serif;
+                    text-decoration:none;
+                    text-align:center;
+                    mso-line-height-rule:exactly;">
+                  과정 소개 브로슈어 다운로드 하기
+                </a>
+              </td>
+            </tr></tbody>
+          </table>
+
+          <!-- 하단 이미지들 -->
+          <div class="stb-image-box">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr><td style="padding:0;margin:0;border:0;line-height:0;font-size:0;">
+                <img src="https://img2.stibee.com/87638_3195430_1768894847038627971.jpg" width="700" class="stb-justify"
+                  style="width:100%;max-width:700px;height:auto;display:block;border:0;line-height:0;font-size:0;">
+              </td></tr></tbody>
+            </table>
+          </div>
+
+          <div class="stb-image-box">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr><td style="padding:0;margin:0;border:0;line-height:0;font-size:0;">
+                <img src="https://img2.stibee.com/87638_3195430_1768957907628387845.jpg" width="700" class="stb-justify"
+                  style="width:100%;max-width:700px;height:auto;display:block;border:0;line-height:0;font-size:0;">
+              </td></tr></tbody>
+            </table>
+          </div>
+
+          <!-- 2버튼(좌우) : 이메일 안정성 위해 table로 고정 -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#F9F8F6;">
+            <tbody><tr>
+              <td style="padding:15px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                    <td width="50%" style="padding:0 6px 0 0;">
+                      <a href="https://moaform.com/q/gvTDKD" target="_blank" rel="noopener noreferrer"
+                        style="display:block;background:#6b5a2e;color:#fff;padding:20px 10px;border-radius:999px;
+                          font-size:18px;line-height:18px;font-weight:700;text-decoration:none;text-align:center;
+                          font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',Arial,sans-serif;
+                          mso-line-height-rule:exactly;">
+                        상담 요청
+                      </a>
+                    </td>
+                    <td width="50%" style="padding:0 0 0 6px;">
+                      <a href="https://moaform.com/q/avya7X" target="_blank" rel="noopener noreferrer"
+                        style="display:block;background:#6b5a2e;color:#fff;padding:20px 10px;border-radius:999px;
+                          font-size:18px;line-height:18px;font-weight:700;text-decoration:none;text-align:center;
+                          font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',Arial,sans-serif;
+                          mso-line-height-rule:exactly;">
+                        교육 신청
+                      </a>
+                    </td>
+                  </tr></tbody>
+                </table>
+              </td>
+            </tr></tbody>
+          </table>
+
+          <!-- 하단 연락처(수신거부 링크 제거 유지) -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+              <td style="padding:15px;text-align:center;color:#747579;font-size:12px;line-height:1.7;
+                font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',Arial,sans-serif;">
+                031-726-0949<br>
+                root@rootconsulting.co.kr<br>
+                경기도 성남시 분당구 백현로 100
+              </td>
+            </tr></tbody>
+          </table>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 </body>
 </html>
